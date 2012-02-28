@@ -8,7 +8,20 @@ fi
 # Set the PS1 prompt (with colors).
 # Based on http://www-128.ibm.com/developerworks/linux/library/l-tip-prompt/
 # And http://networking.ringofsaturn.com/Unix/Bash-prompts.php .
-PS1="\[\e[36;1m\]\u@\h:\[\e[32;1m\]\w$ \[\e[0m\]"
+PS1="\[\e[36;1m\]\u@\h:\[\e[32;1m\]\w\n$ \[\e[0m\]"
+
+# Add MacPorts to PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# Add user's bin
+if [ -d ~/bin ]; then
+	export PATH=~/bin:$PATH
+fi
+
+# Library and include resolution for autoconf
+# By dma_k at http://stackoverflow.com/questions/517580/library-resolution-with-autoconf
+export CPPFLAGS=-I/opt/local/include
+export LDFLAGS=-L/opt/local/lib
 
 # Set the default editor to vim.
 #export EDITOR=vim
