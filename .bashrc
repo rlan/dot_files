@@ -37,6 +37,11 @@ export LDFLAGS=-L/opt/local/lib
 # instead of after closing the session.
 #PROMPT_COMMAND='history -a'
 
+# Add location-based bashrc
+if [ -f ~/.bashrc_work ]; then
+    source ~/.bashrc_work
+fi
+
 # Add bash aliases.
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
