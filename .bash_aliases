@@ -24,3 +24,6 @@ alias grep='grep --color=auto'
  
 # Shortcut for using the Kdiff3 tool for svn diffs.
 #alias svnkdiff3='svn diff --diff-cmd kdiff3'
+
+# Show address to back-to-my-mac service.
+alias icloud="echo show Setup:/Network/BackToMyMac | scutil | sed -n 's/.* : *\(.*\).$/\1/p'"
