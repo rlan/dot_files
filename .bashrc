@@ -19,18 +19,10 @@ xterm*|rxvt*)
     ;;
 esac
 
-# Add MacPorts to PATH
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 # Add user's bin
 if [ -d ~/bin ]; then
 	export PATH=~/bin:$PATH
 fi
-
-# Library and include resolution for autoconf
-# By dma_k at http://stackoverflow.com/questions/517580/library-resolution-with-autoconf
-export CPPFLAGS=-I/opt/local/include
-export LDFLAGS=-L/opt/local/lib
 
 # Set the default editor to vim.
 #export EDITOR=vim
