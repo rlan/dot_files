@@ -25,6 +25,10 @@ xterm*|rxvt*)
     ;;
 esac
 
+# Set JAVA_HOME (Mac OSX)
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+
 # Add user's bin
 if [ -d ~/bin ]; then
 	export PATH=~/bin:$PATH
