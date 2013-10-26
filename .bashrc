@@ -5,6 +5,12 @@ if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
 fi
 
+# Add homebrew bash completion (Mac OSX)
+# Remember to install: brew install bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Set the PS1 prompt (with colors).
 # Based on http://www-128.ibm.com/developerworks/linux/library/l-tip-prompt/
 # And http://networking.ringofsaturn.com/Unix/Bash-prompts.php .
