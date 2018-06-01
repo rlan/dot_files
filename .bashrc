@@ -35,10 +35,10 @@ if [ -d ~/bin ]; then
 fi
 
 # Set the default editor to vim.
-#export EDITOR=vim
+export EDITOR=vim
 
 # Avoid succesive duplicates in the bash command history.
-#export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoredups
 
 # Append commands to the bash command history file (~/.bash_history)
 # instead of overwriting it.

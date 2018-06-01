@@ -26,4 +26,8 @@ alias grep='grep --color=auto'
 #alias svnkdiff3='svn diff --diff-cmd kdiff3'
 
 # Show address to back-to-my-mac service.
-alias icloud="echo show Setup:/Network/BackToMyMac | scutil | sed -n 's/.* : *\(.*\).$/\1/p'"
+#alias icloud="echo show Setup:/Network/BackToMyMac | scutil | sed -n 's/.* : *\(.*\).$/\1/p'"
+
+# Screen text manipulation
+alias tail='tail -n 20'
+alias watch='watch -n1 -d'
