@@ -38,9 +38,3 @@ shopt -s checkwinsize
 # Append commands to the history every time a prompt is shown,
 # instead of after closing the session.
 #PROMPT_COMMAND='history -a'
-
-# Add location-based bashrc
-[ -f ~/.bashrc_work ] && . ~/.bashrc_work
-
-# Add bash aliases.
-[ -f ~/.bash_aliases ] && . ~/.bash_aliases

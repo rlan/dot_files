@@ -6,6 +6,12 @@
 # Load .bashrc, containing non-login related bash initializations.
 [ -f ~/.bashrc ] && . ~/.bashrc
 
+# Add location-based bashrc
+[ -f ~/.bashrc_local ] && . ~/.bashrc_local
+
+# Add bash aliases.
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+
 # Homebrew bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
