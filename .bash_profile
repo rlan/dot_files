@@ -1,11 +1,18 @@
 # Based off http://stefaanlippens.net/my_bashrc_aliases_profile_and_other_stuff
 
 # Load .profile, containing login, non-bash related initializations.
-if [ -f ~/.profile ]; then
-	source ~/.profile
-fi
+[ -f ~/.profile ] && . ~/.profile
  
 # Load .bashrc, containing non-login related bash initializations.
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
+[ -f ~/.bashrc ] && . ~/.bashrc
+
+# Add location-based bashrc
+[ -f ~/.bashrc_local ] && . ~/.bashrc_local
+
+# Add bash aliases.
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+
+# Homebrew bash completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+[ -f ~/.iterm2_shell_integration.bash ] && . ~/.iterm2_shell_integration.bash
