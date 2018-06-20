@@ -15,4 +15,6 @@
 # Homebrew bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
+# iTerm2 (MacOS) shell integration
+# Download: https://www.iterm2.com/documentation-shell-integration.html
 [ -f ~/.iterm2_shell_integration.bash ] && . ~/.iterm2_shell_integration.bash
