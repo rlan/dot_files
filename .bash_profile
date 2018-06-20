@@ -19,5 +19,7 @@
 [ -f /etc/bash_completion ] && . /etc/bash_completion
 
 # iTerm2 (MacOS) shell integration
-# Download: https://www.iterm2.com/documentation-shell-integration.html
+# https://www.iterm2.com/documentation-shell-integration.html
+# Download:
+# curl -L https://iterm2.com/shell_integration/bash -o ~/.iterm2_shell_integration.bash
 [ -f ~/.iterm2_shell_integration.bash ] && . ~/.iterm2_shell_integration.bash
