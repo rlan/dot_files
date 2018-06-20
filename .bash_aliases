@@ -6,9 +6,18 @@ alias mv='mv -i'
 alias cp='cp -i'
  
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
-alias ll='ls -lF'
-alias la='ls -alF'
-alias ls='ls -F'
+ls --color=auto &> /dev/null
+if [ $? -eq 0 ]; then
+  # Colorize ls for Linux
+  alias ll='ls --color=auto -lF'
+  alias la='ls --color=auto -alF'
+  alias ls='ls --color=auto -F'
+else
+  # Colorize ls for *BSD/darwin is in .profile
+  alias ll='ls -lF'
+  alias la='ls -alF'
+  alias ls='ls -F'
+fi
 
 # Prevents accidentally clobbering files.
 alias mkdir='mkdir -p'
