@@ -1,0 +1,21 @@
+#!/bin/sh
+
+BASE_PATH=`pwd`
+echo "Existing files will be renamed with suffix .original"
+
+[ -f ~/.bash_aliases ] && \mv -f ~/.bash_aliases ~/.bash_aliases.original
+\ln -s $BASE_PATH/.bash_aliases ~
+
+[ -f ~/.bash_profile ] && \mv -f ~/.bash_profile ~/.bash_profile.original
+\ln -s $BASE_PATH/.bash_profile ~
+
+[ -f ~/.bashrc ] && \mv -f ~/.bashrc ~/.bashrc.original
+\ln -s $BASE_PATH/.bashrc ~
+
+[ -f ~/.profile ] && \mv -f ~/.profile ~/.profile.original
+\ln -s $BASE_PATH/.profile ~
+
+[ -f ~/.tmux.conf ] && \mv -f ~/.tmux.conf ~/.tmux.conf.original
+\ln -s $BASE_PATH/.tmux.conf ~
+
+echo "Done"
