@@ -21,6 +21,15 @@ esac
 # Add user's bin
 [ -d ~/bin ] && export PATH=~/bin:$PATH
 
+# Linuxbrew
+LINUXBREW_BASE="$HOME/rhome/linuxbrew"
+if [ -d $LINUXBREW_BASE ]
+then
+  export PATH="$LINUXBREW_BASE/bin:$LINUXBREW_BASE/sbin:$PATH"
+  export MANPATH="$LINUXBREW_BASE/share/man:$MANPATH"
+  export INFOPATH="$LINUXBREW_BASE/share/info:$INFOPATH"
+fi
+
 # Set the default editor to vim.
 export EDITOR=vim
 
