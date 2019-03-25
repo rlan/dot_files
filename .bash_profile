@@ -13,6 +13,7 @@
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
 # Homebrew bash completion
+# Source: brew info bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Ubuntu bash completion
