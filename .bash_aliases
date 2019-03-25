@@ -40,3 +40,9 @@ alias grep='grep --color=auto'
 # Screen text manipulation
 alias tail='tail -n 20'
 alias watch='watch -n1 -d'
+
+# tmux aliases
+alias tma='tmux attach -t'
+alias tmn='tmux new -s'
+
+[ -f /Applications/VLC.app/Contents/MacOS/VLC ] && alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
