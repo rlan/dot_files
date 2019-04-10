@@ -34,7 +34,7 @@ fi
 export EDITOR=vim
 
 # Avoid succesive duplicates in the bash command history.
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoreboth:erasedups
 
 # Append commands to the bash command history file (~/.bash_history)
 # instead of overwriting it.
