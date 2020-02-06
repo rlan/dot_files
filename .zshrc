@@ -70,8 +70,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
+  rsync
   tmux
+  tmuxinator
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,3 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# z plugin for zsh
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z
+# Installation: touch $HOME/z.sh
+. $HOME/z.sh
